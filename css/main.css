@@ -1,0 +1,84 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: #2d3c49;
+    font-weight: 300;
+}
+
+.text-muted{
+  color: #7d97ad;
+}
+
+.text-thin{
+  font-weight: 100;
+}
+
+.title-super {
+  font-size: 60px;
+}
+
+.logo .fa-optin-monster {
+  margin: 15px;
+  font-size: 120px;
+  margin-top: 30px;
+  color: #7d97ad;
+}
+
+.header{
+  text-align: right;
+  display: inline-block;
+  float: right;
+  padding: 12px;
+}
+
+.carousel{
+    background: #2f4357;
+    margin-top: 20px;
+}
+
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+    padding: 0;
+}
+
+img {
+  margin: auto;
+}
+
+@media screen and (max-width: 300px) {
+  .title-super {
+    font-size: 1.75em;
+  }
+  h2 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1em;
+    text-align: center;
+  }
+  .logo, .header {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .title-super {
+    font-size: 36px;
+  }
+  .logo, .header {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+}
+
+.bottom-items {
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 40px;
+  margin-top: 30px;
+  color: #7d97ad;
+}
