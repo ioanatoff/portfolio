@@ -82,3 +82,7 @@ img {
   margin-top: 30px;
   color: #7d97ad;
 }
+
+.bottom-items a {
+  text-decoration: none;
+}
