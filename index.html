@@ -1,84 +1,87 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio Site</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/main.css">
-  </head>
 
-  <body>
-    <div class="container">
-      <header class="row">
-        <a href="#" class="logo">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio Site</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="row">
+      <a href="#" class="logo col-xs-12 col-sm-2">
           <span class="fa fa-optin-monster" aria-hidden="true"></span>
         </a>
-        <span class="header text-right text-uppercase">
+      <section class="col-xs-12 col-sm-10 header text-right text-uppercase">
           <h1 class="title-super text-thin">Anca Tofan</h1>
           <h4>Front-End Web Developer</h4>
-        </span>
-      </header>
+      </section>
+    </header>
 
-      <div class="row">
-        <div class="col-sm-12">
-          <hr />
+    <div class="row">
+      <div class="col-sm-12">
+        <hr>
+      </div>
+    </div>
+
+    <main id="myCarousel" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <picture>
+            <source media="(min-width:750px)" srcset="images/mainimage-1600_large_2x.jpg 2x, images/mainimage-800_large_1x.jpg" />
+            <source media="(min-width: 500px)" srcset="images/mainimage-500_medium.jpg" />
+            <img class="col-xs-12 img-responsive" src="images/mainimage-300_small.jpg" alt="Main image!" />
+          </picture>
+        </div>
+
+        <div class="item">
+          <picture>
+            <source media="(min-width:750px)" srcset="images/mainimg2-1600_large_2x.jpg 2x, images/mainimage-800_large_1x.jpg" />
+            <source media="(min-width: 500px)" srcset="images/mainimg2-500_medium.jpg" />
+            <img class="col-xs-12 img-responsive" src="images/mainimg2-300_small.jpg" alt="Main image!" />
+          </picture>
+        </div>
+
+        <div class="item">
+          <picture>
+            <source media="(min-width:750px)" srcset="images/mainimg3-1600_large_2x.jpg 2x, images/mainimage-800_large_1x.jpg" />
+            <source media="(min-width: 500px)" srcset="images/mainimg3-500_medium.jpg" />
+            <img class="col-xs-12 img-responsive" src="images/mainimg3-300_small.jpg" alt="Main image!" />
+          </picture>
         </div>
       </div>
 
-      <section id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <p class="sr-only">Previous</p>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </main>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item active">
-            <picture>
-              <source media="(min-width:750px)" srcset="images/mainimage-1600_large_2x.jpg 2x, images/mainimage-800_large_1x.jpg" />
-              <source media="(min-width: 500px)" srcset="images/mainimage-500_medium.jpg" />
-              <img class="col-xs-12 img-responsive" src="images/mainimage-300_small.jpg" alt="Main image!" />
-            </picture>
-          </div>
+    <section class="row text-center">
+      <div class="col-xs-12">
+        <h2 class="text-muted">Featured Work</h2>
+      </div>
 
-          <div class="item">
-            <picture>
-              <source media="(min-width:750px)" srcset="images/mainimg2-1600_large_2x.jpg 2x, images/mainimage-800_large_1x.jpg" />
-              <source media="(min-width: 500px)" srcset="images/mainimg2-500_medium.jpg" />
-              <img class="col-xs-12 img-responsive" src="images/mainimg2-300_small.jpg" alt="Main image!" />
-            </picture>
-          </div>
-
-          <div class="item">
-            <picture>
-              <source media="(min-width:750px)" srcset="images/mainimg3-1600_large_2x.jpg 2x, images/mainimage-800_large_1x.jpg" />
-              <source media="(min-width: 500px)" srcset="images/mainimg3-500_medium.jpg" />
-              <img class="col-xs-12 img-responsive" src="images/mainimg3-300_small.jpg" alt="Main image!" />
-            </picture>
-          </div>
-        </div>
-
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-          <p class="sr-only">Previous</p>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </section>
-
-      <section class="row text-center">
-        <div class="col-xs-12">
-          <h2 class="text-muted">Featured Work</h2>
-        </div>
-
+      <article>
         <div class="col-xs-12 col-sm-4">
           <figure>
             <picture>
@@ -90,7 +93,9 @@
           <h3>FIRST PROJECT</h3>
           <p><a href="#">First project!</a></p>
         </div>
+      </article>
 
+      <article>
         <div class="col-xs-12 col-sm-4">
           <figure>
             <picture>
@@ -102,7 +107,9 @@
           <h3>SECOND PROJECT</h3>
           <p><a href="#">Second project!</a></p>
         </div>
+      </article>
 
+      <article>
         <div class="col-xs-12 col-sm-4">
           <figure>
             <picture>
@@ -114,67 +121,69 @@
           <h3>THIRD PROJECT</h3>
           <p><a href="#">Third project!</a></p>
         </div>
-      </section>
-    </div>
+      </article>
+    </section>
+  </div>
 
-    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">First Project Page</h4>
-          </div>
-          <div class="modal-body">
-            <img class="img-responsive" src="images_src/htmlcss.jpg"> This was my first project in this class. I learned a lot about HTML and CSS.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
+  <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">First Project Page</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="images_src/htmlcss.jpg" alt="Html and css image"> This was my first project in this class. I learned a lot about HTML and CSS.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">Second Project Page</h4>
-          </div>
-          <div class="modal-body">
-            <img class="img-responsive" src="images_src/javascript.jpg"> This was my second project in this class. I learned a lot about JS.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
+  <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Second Project Page</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="images_src/javascript.jpg" alt="Javascript image"> This was my second project in this class. I learned a lot about JS.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">Third Project Page</h4>
-          </div>
-          <div class="modal-body">
-            <img class="img-responsive" src="images_src/angular.png"> This was my third project in this class. I learned a lot about Angular.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
+  <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Third Project Page</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="images_src/angular.png" alt="Angular image"> This was my third project in this class. I learned a lot about Angular.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <footer class="col-xs-12 text-center">
-      <span class="bottom-items">
+  <footer class="col-xs-12 text-center">
+    <span class="bottom-items">
         <a href="https://plus.google.com/" class="fa fa-google-plus-square" aria-hidden="true"></a>
         <a href="https://github.com/ioanatoff" class="fa fa-github-square" aria-hidden="true"></a>
         <a href="https://www.linkedin.com/" class="fa fa-linkedin-square" aria-hidden="true"></a>
       </span>
-    </footer>
+  </footer>
 
-    <script src="js/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  </body>
+  <script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
 </html>

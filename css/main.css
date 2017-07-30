@@ -63,7 +63,7 @@ img {
   }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 770px) {
   .title-super {
     font-size: 36px;
   }
